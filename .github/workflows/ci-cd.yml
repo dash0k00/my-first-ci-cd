@@ -66,7 +66,6 @@ jobs:
         with:
           name: bandit-scan-results
           path: bandit_results.json
-          retention-days: 7
 
       # Шаг 5: Запускаем сканер зависимостей Trivy
       - name: Run Trivy vulnerability scanner
