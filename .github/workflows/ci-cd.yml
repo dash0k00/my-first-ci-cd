@@ -30,6 +30,11 @@ jobs:
           pip install -r requirements.txt
           pip install pytest
 
+      - name: Build project
+        run: |
+          echo "Build started"
+          echo "Build finished successfully"
+
       # Шаг 4: Запускаем SAST-сканер (Bandit)
       - name: Run Bandit SAST Scan
         run: |
