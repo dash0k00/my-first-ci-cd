@@ -35,6 +35,12 @@ jobs:
           echo "Build started"
           echo "Build finished successfully"
 
+        # Шаг 3.1: Запускаем проверку стиля кода с flake8
+      - name: Run flake8 linting
+        run: |
+          pip install flake8
+          flake8 . --count --show-source --statistics
+
       # Шаг 4: Запускаем SAST-сканер (Bandit)
       - name: Run Bandit SAST Scan
         run: |
