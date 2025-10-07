@@ -92,10 +92,10 @@ jobs:
     needs: security-scan
 
     steps:
-      - name: Checkout
+      - name: Checkout #получение кода
         uses: actions/checkout@v4
 
-      - name: Setup Python
+      - name: Setup Python # настройка окружения
         uses: actions/setup-python@v5
         with:
           python-version: "3.10"
