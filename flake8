@@ -1,2 +1,4 @@
 [flake8]
-exclude = venv,.venv
+ignore = E722, W503, E501#игнорирование определенных правил
+max-line-length = 120
+exclude = .git,__pycache__,build,dist,venv,.venv #исключение директорий из проверки
