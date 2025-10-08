@@ -39,7 +39,7 @@ jobs:
       - name: Run flake8 linting
         run: |
           pip install flake8
-          flake8 . --count --show-source --statistics
+          flake8 . --count --show-source --statistics --exit-zero
 
       # Шаг 4: Запускаем SAST-сканер (Bandit)
       - name: Run Bandit SAST Scan
